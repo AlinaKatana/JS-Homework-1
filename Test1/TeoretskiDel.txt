@@ -1,0 +1,41 @@
+1. Што е World Wide Web?
+Hypertext baziran sistem za informacii, odnosno site javni web-strani i web-sajtovi koi se naogjaat na odredeni serveri, do koi korisnikot moze da pristapi od svojot kompjuter preku internet.
+
+2. Какви пораки се испраќаат преку HTTP помеѓу клиентот и серверот?
+HTTP poraki se poraki koi se razmenuvaat pomegju klientot i serverot, requests se poraki/baranja isprateni od klientot se so cel da predizvika nekoja akcija kaj serverot(naracka) i responses se odgovori koi se vrakjaat od serverot kon klientot vrz baza na baranjeto.
+
+3. Што е Node.js, а што Express.js?
+Node JS e platforma za kodiranje/kreiranje na aplikacii bazirana na JavaScript, dodeka express e framework/datoteka koja e bazirana na Node JS.
+
+4. Што е MVC архитектура и што е обврската на нејзините составни делови?
+Arhitektura za organizacija na kodot se so cel porazbirliv i poorganiziran kod, a voedni i kod koj moze lesno da se reupotrebuva, podelena vo 3 dela: Model, View, Controller.
+Modelot ja menadzira datata, kontaktiranje so databazi.
+View e pretstavuvanje na datata na UI(User Interface)/korisnikot.
+Controller e komponentata koja gi kontrolira procesite pomegju userot i modelot, gi povrzuva View i Model, se spravuva so requests, kako i procesiranje na data.
+
+5. Што се рути?
+URL, odnosno navigacija na odredena aplikacija niz razlichni delovi na istata.
+
+6. Што се модули? (бонус: какви типови на модули има?)
+Moduli se gotovi funkcii (vekje napraveni) koi moze da se reupotrebuvaat niz kodot.
+Lokalni moduli, moduli koi gi izrabotuva developerot vo samata aplikacija se so cel reiskoristuvanje na kodot.
+Third-Party Moduli se moduli izraboteni od treti strani i istite moze da se instaliraa/prezemat i iskoristat vo aplikacijata (Mongoose, React, Express...)
+Core Moduli se moduli koi gi ima samata platforma kako gotovi.
+
+7. Што е веб сервис? Дадете пример за еден веб сервис.
+Web Server e e servis za opsluzuvanje na requesti dadeni od korisnikot. Server e konobar koj ja prima narachkata/baranjeto na klientot, go obrabotuva i otkoga ke gi dobie informaciite od odredena data baza(primer kujna vo restoran) istite mu gi servira nazad na klientot/gostinot vo restoranot.
+
+8. Објаснете што е и како функционира JWT автентикација?
+JSON Web Token e token(kluc) za zashtita na odredeni podatoci. JWT Tokenot gi zashtituva podatocite pri transfer od klientot do databazata i obratno. 
+Avtentikacija raboti so toa sto koga klientot ke isprati podatoci do serverot, serverot izdava token koj e unikaten i se odnesuva samo na toj user, serverot go isprakja ovoj token do klientot, koga klientot saka da pristapi do odredeni senzitivni/zakluceni informacii serverot go proveruva tokenot i dokolku e validen go pushta klientot vnatre, odnosno obezbeduva pristap do baranite podatoci.
+
+9. Што е MongoDB? Објаснете накратко за каков софтвер станува збор?
+Databaza/ storage za informacii. NoSQL databaza, nestrukturirana. 
+
+10. Што е разликата помеѓу MongoDB и Mongoose?
+Mongo DB e databaza, dodeka mongoose biblioteka za modeliranje(postavuvanje na Schema) na data za MongoDB.
+
+11. Што е разликата помеѓу Synchronous (Сихрона) i Аsynchronous (Асинхрона) функција во Node.js
+Poradi izvrshuvanjeto na kodot linija po linija od gore nadole, asyncronite funkcii se funkcii koi nema da bidat afektirani od ova pravilo. Se upotrebuvaat za funkcii koi najcesto obrabotuvaat podatoci od databaza, a se so cel da ne go ukocat kodot. Asinhronite funkcii izleguvaat od krugot na kodot i se izvrshuvaat koga ke gi imaat site podatoci. Sinhronite funkcii se funkcii koi se dvizat po praviloto na izvrshuvanje na kodot i istite se izvrshuvaat redosledno.
+
+
